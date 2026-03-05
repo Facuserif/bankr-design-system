@@ -1,0 +1,132 @@
+html {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+:root {
+  /* Background */
+  --background-color-bg: 255 255 255;
+  --background-color-bg-primary: 24 24 27;
+  --background-color-bg-primary-hover: 24 24 27;
+  --background-color-bg-primary-hover-alpha: 0.9;
+  --background-color-bg-primary-active: 39 39 42;
+  --background-color-bg-secondary: 228 228 231;
+  --background-color-bg-secondary-hover: 212 212 216;
+  --background-color-bg-secondary-active: 212 212 216;
+
+  --background-default-color-bg: 255 255 255;
+  --background-default-color-bg-subtle: 250 250 250;
+  --background-default-color-bg-elevated: 244 244 245;
+  --background-default-color-bg-strong: 228 228 231;
+  --background-default-color-bg-disabled: 228 228 231;
+
+  --background-magic-color-bg-magic: 139 92 246;
+  --background-magic-color-bg-magic-hover: 109 40 217;
+  --background-magic-color-bg-magic-active: 91 33 182;
+
+  --background-success-color-bg-success-muted: 240 253 244;
+  --background-success-color-bg-success-strong: 74 222 128;
+
+  --background-error-color-bg-error-strong: 239 68 68;
+  --background-error-color-bg-error-muted: 254 242 242;
+
+  --background-magic-color-bg-magic-muted: 237 233 254;
+
+  --background-warning-color-bg-warning-muted: 254 249 195;
+
+  /* Border */
+  --border-color-border: 228 228 231;
+  --border-color-border-hover: 212 212 216;
+  --border-color-border-disabled: 244 244 245;
+  --border-color-border-focus-ring: 196 181 253;
+  --border-color-border-on-color: 250 250 250;
+  --border-color-border-input: 212 212 216;
+  --border-color-border-input-hover: 196 181 253;
+  --border-color-border-success: 34 197 94;
+  --border-color-border-magic-muted: 196 181 253;
+  --border-color-border-error-muted: 248 113 113;
+  --border-color-border-warning: 202 138 4;
+
+  /* Text */
+  --text-color-text: 9 9 11;
+  --text-color-text-on-color: 255 255 255;
+  --text-color-text-disabled: 161 161 170;
+  --text-color-text-muted: 113 113 122;
+  --text-color-text-magic: 124 58 237;
+  --text-color-text-magic-strong: 76 29 149;
+  --text-color-text-success: 34 197 94;
+  --text-color-text-error: 220 38 38;
+  --text-color-text-warning: 161 98 7;
+  --text-color-text-placeholder: 113 113 122;
+
+  /* Icon */
+  --icon-color-icon: 24 24 27;
+  --icon-color-icon-on-color: 250 250 250;
+  --icon-color-icon-disabled: 161 161 170;
+  --icon-color-icon-muted: 113 113 122;
+}
+
+.dark {
+  /* Background */
+  --background-color-bg: 9 9 11;
+  --background-color-bg-primary: 250 250 250;
+  --background-color-bg-primary-hover: 250 250 250;
+  --background-color-bg-primary-hover-alpha: 0.9;
+  --background-color-bg-primary-active: 244 244 245;
+  --background-color-bg-secondary: 39 39 42;
+  --background-color-bg-secondary-hover: 24 24 27;
+  --background-color-bg-secondary-active: 39 39 42;
+
+  --background-default-color-bg: 9 9 11;
+  --background-default-color-bg-subtle: 39 39 42;
+  --background-default-color-bg-subtle-alpha: 0.349;
+  --background-default-color-bg-elevated: 24 24 27;
+  --background-default-color-bg-strong: 39 39 42;
+  --background-default-color-bg-disabled: 39 39 42;
+
+  --background-magic-color-bg-magic: 139 92 246;
+  --background-magic-color-bg-magic-hover: 167 139 250;
+  --background-magic-color-bg-magic-active: 167 139 250;
+
+  --background-success-color-bg-success-muted: 5 46 22;
+  --background-success-color-bg-success-strong: 74 222 128;
+
+  --background-error-color-bg-error-strong: 239 68 68;
+  --background-error-color-bg-error-muted: 68 12 12;
+
+  --background-magic-color-bg-magic-muted: 46 16 101;
+
+  --background-warning-color-bg-warning-muted: 66 32 6;
+
+  /* Border */
+  --border-color-border: 39 39 42;
+  --border-color-border-hover: 63 63 70;
+  --border-color-border-disabled: 24 24 27;
+  --border-color-border-focus-ring: 109 40 217;
+  --border-color-border-on-color: 9 9 11;
+  --border-color-border-input: 39 39 42;
+  --border-color-border-input-hover: 109 40 217;
+  --border-color-border-success: 34 197 94;
+  --border-color-border-magic-muted: 109 40 217;
+  --border-color-border-error-muted: 185 28 28;
+  --border-color-border-warning: 250 204 21;
+
+  /* Text */
+  --text-color-text: 250 250 250;
+  --text-color-text-on-color: 9 9 11;
+  --text-color-text-disabled: 82 82 91;
+  --text-color-text-muted: 161 161 170;
+  --text-color-text-magic: 167 139 250;
+  --text-color-text-magic-strong: 237 233 254;
+  --text-color-text-success: 74 222 128;
+  --text-color-text-error: 248 113 113;
+  --text-color-text-warning: 250 204 21;
+  --text-color-text-placeholder: 113 113 122;
+
+  /* Icon */
+  --icon-color-icon: 250 250 250;
+  --icon-color-icon-on-color: 24 24 27;
+  --icon-color-icon-disabled: 82 82 91;
+  --icon-color-icon-muted: 161 161 170;
+}
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}

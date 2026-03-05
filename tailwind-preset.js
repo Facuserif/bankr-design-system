@@ -1,0 +1,60 @@
+export var designSystemColors = {
+    // Background
+    "background-color-bg": "rgb(var(--background-color-bg) / <alpha-value>)",
+    "background-color-bg-primary": "rgb(var(--background-color-bg-primary) / <alpha-value>)",
+    "background-color-bg-primary-hover": "rgb(var(--background-color-bg-primary-hover) / 0.9)",
+    "background-color-bg-primary-active": "rgb(var(--background-color-bg-primary-active) / <alpha-value>)",
+    "background-color-bg-secondary": "rgb(var(--background-color-bg-secondary) / <alpha-value>)",
+    "background-color-bg-secondary-hover": "rgb(var(--background-color-bg-secondary-hover) / <alpha-value>)",
+    "background-color-bg-secondary-active": "rgb(var(--background-color-bg-secondary-active) / <alpha-value>)",
+    "background-default-color-bg": "rgb(var(--background-default-color-bg) / <alpha-value>)",
+    "background-default-color-bg-subtle": "rgb(var(--background-default-color-bg-subtle) / <alpha-value>)",
+    "background-default-color-bg-elevated": "rgb(var(--background-default-color-bg-elevated) / <alpha-value>)",
+    "background-default-color-bg-strong": "rgb(var(--background-default-color-bg-strong) / <alpha-value>)",
+    "background-default-color-bg-disabled": "rgb(var(--background-default-color-bg-disabled) / <alpha-value>)",
+    "background-magic-color-bg-magic": "rgb(var(--background-magic-color-bg-magic) / <alpha-value>)",
+    "background-magic-color-bg-magic-hover": "rgb(var(--background-magic-color-bg-magic-hover) / <alpha-value>)",
+    "background-magic-color-bg-magic-active": "rgb(var(--background-magic-color-bg-magic-active) / <alpha-value>)",
+    "background-success-color-bg-success-muted": "rgb(var(--background-success-color-bg-success-muted) / <alpha-value>)",
+    "background-success-color-bg-success-strong": "rgb(var(--background-success-color-bg-success-strong) / <alpha-value>)",
+    "background-error-color-bg-error-strong": "rgb(var(--background-error-color-bg-error-strong) / <alpha-value>)",
+    "background-error-color-bg-error-muted": "rgb(var(--background-error-color-bg-error-muted) / <alpha-value>)",
+    "background-magic-color-bg-magic-muted": "rgb(var(--background-magic-color-bg-magic-muted) / <alpha-value>)",
+    "background-warning-color-bg-warning-muted": "rgb(var(--background-warning-color-bg-warning-muted) / <alpha-value>)",
+    // Border
+    "border-color-border": "rgb(var(--border-color-border) / <alpha-value>)",
+    "border-color-border-hover": "rgb(var(--border-color-border-hover) / <alpha-value>)",
+    "border-color-border-disabled": "rgb(var(--border-color-border-disabled) / <alpha-value>)",
+    "border-color-border-focus-ring": "rgb(var(--border-color-border-focus-ring) / <alpha-value>)",
+    "border-color-border-on-color": "rgb(var(--border-color-border-on-color) / <alpha-value>)",
+    "border-color-border-input": "rgb(var(--border-color-border-input) / <alpha-value>)",
+    "border-color-border-input-hover": "rgb(var(--border-color-border-input-hover) / <alpha-value>)",
+    "border-color-border-success": "rgb(var(--border-color-border-success) / <alpha-value>)",
+    "border-color-border-magic-muted": "rgb(var(--border-color-border-magic-muted) / <alpha-value>)",
+    "border-color-border-error-muted": "rgb(var(--border-color-border-error-muted) / <alpha-value>)",
+    "border-color-border-warning": "rgb(var(--border-color-border-warning) / <alpha-value>)",
+    // Text
+    "text-color-text": "rgb(var(--text-color-text) / <alpha-value>)",
+    "text-color-text-on-color": "rgb(var(--text-color-text-on-color) / <alpha-value>)",
+    "text-color-text-disabled": "rgb(var(--text-color-text-disabled) / <alpha-value>)",
+    "text-color-text-muted": "rgb(var(--text-color-text-muted) / <alpha-value>)",
+    "text-color-text-magic": "rgb(var(--text-color-text-magic) / <alpha-value>)",
+    "text-color-text-magic-strong": "rgb(var(--text-color-text-magic-strong) / <alpha-value>)",
+    "text-color-text-success": "rgb(var(--text-color-text-success) / <alpha-value>)",
+    "text-color-text-error": "rgb(var(--text-color-text-error) / <alpha-value>)",
+    "text-color-text-warning": "rgb(var(--text-color-text-warning) / <alpha-value>)",
+    "text-color-text-placeholder": "rgb(var(--text-color-text-placeholder) / <alpha-value>)",
+    // Icon
+    "icon-color-icon": "rgb(var(--icon-color-icon) / <alpha-value>)",
+    "icon-color-icon-on-color": "rgb(var(--icon-color-icon-on-color) / <alpha-value>)",
+    "icon-color-icon-disabled": "rgb(var(--icon-color-icon-disabled) / <alpha-value>)",
+    "icon-color-icon-muted": "rgb(var(--icon-color-icon-muted) / <alpha-value>)",
+};
+var preset = {
+    theme: {
+        extend: {
+            colors: designSystemColors,
+        },
+    },
+};
+export default preset;

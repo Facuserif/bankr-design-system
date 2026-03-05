@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    @apply bg-background-default-color-bg text-text-color-text antialiased;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    background-image: radial-gradient(
+      circle at 20% 10%,
+      rgb(var(--background-magic-color-bg-magic) / 0.09),
+      transparent 36%
+    );
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-border-color-border bg-background-default-color-bg-elevated p-4;
+  }
+
+  .token-code {
+    @apply rounded-md border border-border-color-border bg-background-default-color-bg-subtle px-2 py-1 font-mono text-xs;
+  }
+}
+
+@layer utilities {
+  .text-xs {
+    @apply text-[12px] leading-[16px];
+  }
+
+  .text-sm {
+    @apply text-[14px] leading-[20px];
+  }
+
+  .text-base {
+    @apply text-[16px] leading-[24px];
+  }
+
+  .text-md {
+    @apply text-[16px] leading-[24px];
+  }
+
+  .text-lg {
+    @apply text-[18px] leading-[28px];
+  }
+
+  .text-xl {
+    @apply text-[20px] leading-[28px];
+  }
+
+  .text-2xl {
+    @apply text-[24px] leading-[32px];
+  }
+
+  .text-3xl {
+    @apply text-[30px] leading-[36px];
+  }
+
+  .text-xs-medium {
+    @apply text-[12px] leading-[16px] font-medium;
+  }
+
+  .text-sm-medium {
+    @apply text-[14px] leading-[20px] font-medium;
+  }
+
+  .text-base-medium {
+    @apply text-[16px] leading-[24px] font-medium;
+  }
+
+  .text-md-medium {
+    @apply text-[16px] leading-[24px] font-medium;
+  }
+
+  .text-lg-medium {
+    @apply text-[18px] leading-[28px] font-medium;
+  }
+
+  .text-xl-medium {
+    @apply text-[20px] leading-[28px] font-medium;
+  }
+
+  .text-2xl-medium {
+    @apply text-[24px] leading-[32px] font-medium;
+  }
+
+  .text-3xl-medium {
+    @apply text-[30px] leading-[36px] font-medium;
+  }
+
+  .text-xs-semibold {
+    @apply text-[12px] leading-[16px] font-semibold;
+  }
+
+  .text-sm-semibold {
+    @apply text-[14px] leading-[20px] font-semibold;
+  }
+
+  .text-base-semibold {
+    @apply text-[16px] leading-[24px] font-semibold;
+  }
+
+  .text-md-semibold {
+    @apply text-[16px] leading-[24px] font-semibold;
+  }
+
+  .text-lg-semibold {
+    @apply text-[18px] leading-[28px] font-semibold;
+  }
+
+  .text-xl-semibold {
+    @apply text-[20px] leading-[28px] font-semibold;
+  }
+
+  .text-2xl-semibold {
+    @apply text-[24px] leading-[32px] font-semibold;
+  }
+
+  .text-3xl-semibold {
+    @apply text-[30px] leading-[36px] font-semibold;
+  }
+}
