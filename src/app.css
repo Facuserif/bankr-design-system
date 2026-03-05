@@ -22,13 +22,15 @@
 
 @layer components {
   .card {
-    @apply rounded-xl bg-background-default-color-bg-subtle p-4;
+    @apply rounded-xl p-4 border-0;
+    background-color: rgb(var(--background-default-color-bg-subtle) / var(--background-default-color-bg-subtle-alpha, 1));
   }
+}
 
   .token-code {
     @apply rounded-md border border-border-color-border bg-background-default-color-bg-subtle px-2 py-1 font-mono text-xs;
   }
-}
+
 
 @layer utilities {
   .text-xs {
