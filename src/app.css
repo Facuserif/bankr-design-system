@@ -22,7 +22,7 @@
 
 @layer components {
   .card {
-    @apply rounded-xl border border-border-color-border bg-background-default-color-bg-elevated p-4;
+    @apply rounded-xl bg-background-default-color-bg-subtle p-4;
   }
 
   .token-code {
