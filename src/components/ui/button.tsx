@@ -203,7 +203,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ) => {
     const Comp = asChild ? Slot : "button";
     const resolvedState: ButtonVisualState = disabled ? "disabled" : state;
-    const iconClass = iconSizeClass(size);
+    const iconClass = iconSizeClass(size ?? "md");
     const iconOnlyContent = leadingIcon ?? trailingIcon;
 
     return (
