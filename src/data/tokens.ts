@@ -55,7 +55,7 @@ function parseMapping(md: string): MappingRow[] {
       .split("|")
       .map((item) => item.trim())
       .filter(Boolean)
-      .map((item) => item.replaceAll("`", ""));
+      .map((item) => item.replace(/`/g, ""));
 
     return {
       tokenName: cols[0],
