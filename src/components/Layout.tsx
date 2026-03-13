@@ -11,8 +11,7 @@ const navItems = [
 
 const patternItems = [
   { to: "/patterns/token-creation-dialog", label: "Token creation dialog" },
-  { to: "/patterns/agent-configuration", label: "Agent configuration" },
-  { to: "/patterns/settings-panel", label: "Settings panel" },
+  { to: "/patterns/deposit-dialog", label: "Deposit dialog" },
 ];
 
 export function Layout() {

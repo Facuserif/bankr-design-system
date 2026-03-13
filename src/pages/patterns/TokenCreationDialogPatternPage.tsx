@@ -79,7 +79,7 @@ export function TokenCreationDialogPatternPage() {
               <DialogFooterPrimaryAction>Open token creation dialog</DialogFooterPrimaryAction>
             </DialogTrigger>
           ) : null}
-          <DialogContent>
+          <DialogContent className="sm:max-w-[640px]">
             <DialogHeader>
               <DialogTitle>Create token</DialogTitle>
               <DialogClose
@@ -92,21 +92,23 @@ export function TokenCreationDialogPatternPage() {
                 </svg>
               </DialogClose>
             </DialogHeader>
-            <DialogBody className="p-6">
+            <DialogBody className="space-y-8 p-6">
               <div className="space-y-2">
                 <DialogDescription>Create your token metadata and launch settings.</DialogDescription>
-                <DialogMutedText>Use this flow to configure naming, network, category, and optional launch controls.</DialogMutedText>
+                <DialogMutedText className="max-w-none">
+                  Use this flow to configure naming, network, category, and optional launch controls.
+                </DialogMutedText>
               </div>
 
               <div className="flex flex-col gap-6">
                 <div className="grid grid-cols-2 gap-4">
                   <label className="flex flex-col gap-2">
                     <span className="text-xs text-text-color-text-disabled">Token name</span>
-                    <Input value={tokenName} onChange={(event) => setTokenName(event.target.value)} placeholder="My token" />
+                    <Input filled value={tokenName} onChange={(event) => setTokenName(event.target.value)} placeholder="My token" />
                   </label>
                   <label className="flex flex-col gap-2">
                     <span className="text-xs text-text-color-text-disabled">Ticker</span>
-                    <Input value={ticker} onChange={(event) => setTicker(event.target.value.toUpperCase())} placeholder="TICK" />
+                    <Input filled value={ticker} onChange={(event) => setTicker(event.target.value.toUpperCase())} placeholder="TICK" />
                   </label>
                 </div>
 
