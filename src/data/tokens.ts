@@ -81,8 +81,8 @@ export const tokenColors: TokenColorData[] = Object.keys(lightVars)
     const fromColorMode = resolvedColorModeMap[key];
     const fallbackLight = resolveModeHex(cssVar, lightVars);
     const fallbackDark = resolveModeHex(cssVar, darkVars);
-    const lightHex = fromColorMode?.lightHex ?? fallbackLight;
-    const darkHex = fromColorMode?.darkHex ?? fallbackDark;
+    const lightHex = fallbackLight ?? fromColorMode?.lightHex;
+    const darkHex = fallbackDark ?? fromColorMode?.darkHex;
 
     if (!lightHex || !darkHex) {
       return [];

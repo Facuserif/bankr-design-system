@@ -7,9 +7,9 @@ const badgeVariants = cva(
   {
     variants: {
       size: {
-        sm: "h-5 gap-1 px-2 py-0.5 text-xs leading-4",
-        md: "h-7 gap-1 px-3 py-1 text-sm leading-5",
-        lg: "h-8 gap-1.5 px-3 py-1.5 text-sm leading-5",
+        sm: "h-5 gap-1.5 px-[9px] py-[3px] text-xs leading-4",
+        md: "h-7 gap-1.5 px-[13px] py-[5px] text-sm leading-5",
+        lg: "h-8 gap-1.5 px-[13px] py-[7px] text-sm leading-5",
       },
       variant: {
         solid: "",

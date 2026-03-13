@@ -8,13 +8,13 @@ const inputVariants = cva(
     variants: {
       visual: {
         default:
-          "border-border-color-border-input bg-background-default-color-bg-subtle text-text-color-text placeholder:text-text-color-text-placeholder hover:border-border-color-border-hover focus-visible:border-border-color-border-input-hover focus-visible:ring-2 focus-visible:ring-border-color-border-focus-ring focus-visible:ring-offset-0",
+          "border-border-color-border-input bg-background-default-color-bg-surface text-text-color-text placeholder:text-text-color-text-placeholder hover:border-border-color-border-hover hover:bg-background-default-color-bg-elevated focus-visible:border-border-color-border-focus-ring focus-visible:bg-background-default-color-bg-surface",
         filled:
-          "border-border-color-border-input bg-background-default-color-bg-subtle text-text-color-text placeholder:text-text-color-text-placeholder hover:border-border-color-border-hover focus-visible:border-border-color-border-input-hover focus-visible:ring-2 focus-visible:ring-border-color-border-focus-ring focus-visible:ring-offset-0",
+          "border-border-color-border-input bg-background-default-color-bg-surface text-text-color-text placeholder:text-text-color-text-placeholder hover:border-border-color-border-hover hover:bg-background-default-color-bg-elevated focus-visible:border-border-color-border-focus-ring focus-visible:bg-background-default-color-bg-surface",
         error:
-          "border-border-color-border-error-muted bg-background-error-color-bg-error-muted text-text-color-text-error placeholder:text-text-color-text-error focus-visible:border-border-color-border-error-muted focus-visible:ring-2 focus-visible:ring-border-color-border-error-muted focus-visible:ring-offset-0",
+          "border-border-color-border-error-muted bg-background-error-color-bg-error-muted text-text-color-text-error placeholder:text-text-color-text-error focus-visible:border-border-color-border-error-muted",
         disabled:
-          "cursor-not-allowed border-border-color-border-input bg-background-default-color-bg-disabled text-text-color-text-disabled placeholder:text-text-color-text-disabled",
+          "cursor-not-allowed border-border-color-border-disabled bg-background-default-color-bg-disabled text-text-color-text-disabled placeholder:text-text-color-text-disabled",
       },
     },
     defaultVariants: {

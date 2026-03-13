@@ -16,8 +16,8 @@ const TooltipContent = React.forwardRef<React.ElementRef<typeof TooltipPrimitive
   const isHorizontal = side === "left" || side === "right";
   const arrowWidth = isHorizontal ? 7 : 12;
   const arrowHeight = isHorizontal ? 12 : 7;
-  const surfaceClass = inverted ? "bg-background-default-color-bg text-text-color-text" : "bg-background-color-bg-primary text-text-color-text-on-color";
-  const arrowClass = inverted ? "fill-background-default-color-bg" : "fill-background-color-bg-primary";
+  const surfaceClass = inverted ? "bg-background-default-color-bg-elevated text-text-color-text" : "bg-background-default-color-bg-elevated text-text-color-text";
+  const arrowClass = inverted ? "fill-background-default-color-bg-elevated" : "fill-background-default-color-bg-elevated";
 
   return (
     <TooltipPrimitive.Content

@@ -17,10 +17,10 @@ const buttonVariants = cva(
         brand: "",
       },
       size: {
-        sm: "h-8 px-4 py-2 text-[12px] leading-4",
-        md: "h-10 px-4 py-2 text-[14px] leading-5",
-        lg: "h-11 px-4 py-2 text-[16px] leading-6",
-        xl: "h-12 px-4 py-2 text-[16px] leading-6",
+        sm: "h-8 px-[17px] py-[9px] text-[12px] leading-4",
+        md: "h-10 px-[17px] py-[9px] text-[14px] leading-5",
+        lg: "h-11 px-[17px] py-[9px] text-[16px] leading-6",
+        xl: "h-12 px-[17px] py-[9px] text-[16px] leading-6",
       },
       state: {
         default: "",
@@ -80,7 +80,7 @@ const buttonVariants = cva(
         variant: "outline",
         state: "default",
         className:
-          "border-border-color-border bg-background-default-color-bg text-text-color-text hover:border-border-color-border-hover hover:bg-background-default-color-bg-subtle active:bg-background-default-color-bg-elevated",
+          "border-border-color-border bg-transparent text-text-color-text hover:border-border-color-border-hover hover:bg-background-default-color-bg-subtle active:bg-background-default-color-bg-elevated",
       },
       {
         variant: "outline",
@@ -90,23 +90,23 @@ const buttonVariants = cva(
       {
         variant: "outline",
         state: "focused",
-        className: "border-border-color-border bg-background-default-color-bg text-text-color-text",
+        className: "border-border-color-border bg-background-default-color-bg-subtle text-text-color-text",
       },
       {
         variant: "outline",
         state: "disabled",
         className:
-          "border-border-color-border-disabled bg-background-default-color-bg text-text-color-text-disabled",
+          "border-border-color-border-disabled bg-transparent text-text-color-text-disabled",
       },
       {
         variant: "ghost",
         state: "default",
-        className: "bg-transparent text-text-color-text hover:bg-background-default-color-bg-subtle active:bg-background-default-color-bg-elevated",
+        className: "bg-transparent text-text-color-text hover:bg-background-default-color-bg-strong active:bg-background-default-color-bg-strong",
       },
       {
         variant: "ghost",
         state: "hover",
-        className: "bg-background-default-color-bg-subtle text-text-color-text",
+        className: "bg-background-default-color-bg-strong text-text-color-text",
       },
       {
         variant: "ghost",

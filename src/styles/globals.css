@@ -3,7 +3,7 @@ html {
 }
 :root {
   /* Background */
-  --background-color-bg: 255 255 255;
+  --background-color-bg: 247 247 247;
   --background-color-bg-primary: 24 24 27;
   --background-color-bg-primary-hover: 24 24 27;
   --background-color-bg-primary-hover-alpha: 0.9;
@@ -12,12 +12,13 @@ html {
   --background-color-bg-secondary-hover: 212 212 216;
   --background-color-bg-secondary-active: 212 212 216;
 
-  --background-default-color-bg: 255 255 255;
-  --background-default-color-bg-subtle: 250 250 250;
-  --background-default-color-bg-subtle-alpha: 1;
-  --background-default-color-bg-elevated: 244 244 245;
-  --background-default-color-bg-strong: 228 228 231;
-  --background-default-color-bg-disabled: 228 228 231;
+  --background-default-color-bg: 247 247 247;
+  --background-default-color-bg-surface: 242 242 243;
+  --background-default-color-bg-subtle: 212 212 216;
+  --background-default-color-bg-subtle-alpha: 0.5;
+  --background-default-color-bg-elevated: 228 228 231;
+  --background-default-color-bg-strong: 212 212 216;
+  --background-default-color-bg-disabled: 212 212 216;
 
   --background-magic-color-bg-magic: 139 92 246;
   --background-magic-color-bg-magic-hover: 109 40 217;
@@ -36,9 +37,9 @@ html {
   /* Border */
   --border-color-border: 228 228 231;
   --border-color-border-hover: 212 212 216;
-  --border-color-border-disabled: 244 244 245;
+  --border-color-border-disabled: 242 242 243;
   --border-color-border-focus-ring: 196 181 253;
-  --border-color-border-on-color: 250 250 250;
+  --border-color-border-on-color: 247 247 247;
   --border-color-border-input: 212 212 216;
   --border-color-border-input-hover: 196 181 253;
   --border-color-border-success: 34 197 94;
@@ -60,7 +61,7 @@ html {
 
   /* Icon */
   --icon-color-icon: 24 24 27;
-  --icon-color-icon-on-color: 250 250 250;
+  --icon-color-icon-on-color: 247 247 247;
   --icon-color-icon-disabled: 161 161 170;
   --icon-color-icon-muted: 113 113 122;
 }
@@ -68,17 +69,18 @@ html {
 .dark {
   /* Background */
   --background-color-bg: 9 9 11;
-  --background-color-bg-primary: 250 250 250;
-  --background-color-bg-primary-hover: 250 250 250;
+  --background-color-bg-primary: 247 247 247;
+  --background-color-bg-primary-hover: 247 247 247;
   --background-color-bg-primary-hover-alpha: 0.9;
-  --background-color-bg-primary-active: 244 244 245;
+  --background-color-bg-primary-active: 242 242 243;
   --background-color-bg-secondary: 39 39 42;
   --background-color-bg-secondary-hover: 24 24 27;
   --background-color-bg-secondary-active: 39 39 42;
 
   --background-default-color-bg: 9 9 11;
+  --background-default-color-bg-surface: 20 20 22;
   --background-default-color-bg-subtle: 39 39 42;
-  --background-default-color-bg-subtle-alpha: 0.349;
+  --background-default-color-bg-subtle-alpha: 0.5;
   --background-default-color-bg-elevated: 24 24 27;
   --background-default-color-bg-strong: 39 39 42;
   --background-default-color-bg-disabled: 39 39 42;
@@ -111,7 +113,7 @@ html {
   --border-color-border-warning: 250 204 21;
 
   /* Text */
-  --text-color-text: 250 250 250;
+  --text-color-text: 247 247 247;
   --text-color-text-on-color: 9 9 11;
   --text-color-text-disabled: 82 82 91;
   --text-color-text-muted: 161 161 170;
@@ -123,7 +125,7 @@ html {
   --text-color-text-placeholder: 113 113 122;
 
   /* Icon */
-  --icon-color-icon: 250 250 250;
+  --icon-color-icon: 247 247 247;
   --icon-color-icon-on-color: 24 24 27;
   --icon-color-icon-disabled: 82 82 91;
   --icon-color-icon-muted: 161 161 170;

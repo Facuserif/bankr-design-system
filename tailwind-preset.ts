@@ -9,6 +9,7 @@ export const designSystemColors = {
   "background-color-bg-secondary-active": "rgb(var(--background-color-bg-secondary-active) / <alpha-value>)",
 
   "background-default-color-bg": "rgb(var(--background-default-color-bg) / <alpha-value>)",
+"background-default-color-bg-surface": "rgb(var(--background-default-color-bg-surface) / <alpha-value>)",
 "background-default-color-bg-subtle":
 "rgb(var(--background-default-color-bg-subtle) / var(--background-default-color-bg-subtle-alpha))",
  "background-default-color-bg-elevated": "rgb(var(--background-default-color-bg-elevated) / <alpha-value>)",

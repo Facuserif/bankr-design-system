@@ -14,6 +14,7 @@ Source: resolved Figma semantic color tokens (Light + Dark), including confirmed
 | `Background/color-bg-secondary-hover` | `--background-color-bg-secondary-hover` | `background-color-bg-secondary-hover` | `bg-background-color-bg-secondary-hover` |
 | `Background/color-bg-secondary-active` | `--background-color-bg-secondary-active` | `background-color-bg-secondary-active` | `bg-background-color-bg-secondary-active` |
 | `Background/Default/color-bg` | `--background-default-color-bg` | `background-default-color-bg` | `bg-background-default-color-bg` |
+| `Background/Default/color-bg-surface` | `--background-default-color-bg-surface` | `background-default-color-bg-surface` | `bg-background-default-color-bg-surface` |
 | `Background/Default/color-bg-subtle` | `--background-default-color-bg-subtle` | `background-default-color-bg-subtle` | `bg-background-default-color-bg-subtle` |
 | `Background/Default/color-bg-elevated` | `--background-default-color-bg-elevated` | `background-default-color-bg-elevated` | `bg-background-default-color-bg-elevated` |
 | `Background/Default/color-bg-strong` | `--background-default-color-bg-strong` | `background-default-color-bg-strong` | `bg-background-default-color-bg-strong` |

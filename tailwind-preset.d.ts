@@ -7,6 +7,7 @@ export declare const designSystemColors: {
     "background-color-bg-secondary-hover": string;
     "background-color-bg-secondary-active": string;
     "background-default-color-bg": string;
+    "background-default-color-bg-surface": string;
     "background-default-color-bg-subtle": string;
     "background-default-color-bg-elevated": string;
     "background-default-color-bg-strong": string;
@@ -58,6 +59,7 @@ declare const preset: {
                 "background-color-bg-secondary-hover": string;
                 "background-color-bg-secondary-active": string;
                 "background-default-color-bg": string;
+                "background-default-color-bg-surface": string;
                 "background-default-color-bg-subtle": string;
                 "background-default-color-bg-elevated": string;
                 "background-default-color-bg-strong": string;
