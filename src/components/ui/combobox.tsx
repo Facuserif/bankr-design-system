@@ -102,12 +102,12 @@ const Combobox = React.forwardRef<HTMLButtonElement, ComboboxProps>(
 
         {open ? (
           <div
-            className="absolute left-0 top-[calc(100%+2px)] z-50 w-full overflow-hidden rounded-[8px] border border-border-color-border bg-background-default-color-bg-elevated"
+            className="absolute left-0 top-[calc(100%+2px)] z-50 w-full overflow-hidden rounded-[8px] border border-border-color-border bg-background-default-color-bg-surface"
             role="listbox"
           >
             {showHeader ? (
               <div className="border-b border-border-color-border px-2 py-1.5" role="presentation">
-                <div className="h-8 select-none text-sm font-semibold leading-5 text-text-color-text-muted flex items-center">{headerLabel}</div>
+                <div className="flex h-8 select-none items-center text-sm font-semibold leading-5 text-text-color-text">{headerLabel}</div>
               </div>
             ) : null}
             <div className="p-1">
@@ -121,7 +121,7 @@ const Combobox = React.forwardRef<HTMLButtonElement, ComboboxProps>(
                     role="option"
                     aria-selected={isSelected}
                     className={cn(
-                      "flex h-9 w-full items-center gap-2 rounded-md px-2 py-1.5 text-left outline-none transition-colors focus-visible:ring-1 focus-visible:ring-border-color-border-focus-ring focus-visible:ring-offset-0",
+                      "flex h-9 w-full items-center gap-2 rounded-md px-2 py-1.5 text-left outline-none transition-colors",
                       isSelected
                         ? "bg-background-default-color-bg-strong"
                         : "hover:bg-background-default-color-bg-subtle focus-visible:bg-background-default-color-bg-subtle"
