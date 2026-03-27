@@ -5,9 +5,10 @@ type SwatchProps = {
   mode: "light" | "dark";
   hex: string;
   alphaPercent: number | null;
+  primitiveName: string | null;
 };
 
-function Swatch({ mode, hex, alphaPercent }: SwatchProps) {
+function Swatch({ mode, hex, alphaPercent, primitiveName }: SwatchProps) {
   const [copied, setCopied] = useState(false);
 
   const onCopy = async () => {
@@ -22,10 +23,15 @@ function Swatch({ mode, hex, alphaPercent }: SwatchProps) {
 
   return (
     <div className="rounded-lg border border-border-color-border bg-background-default-color-bg p-3">
-      <div className="mb-2 flex items-center justify-between gap-2 text-xs text-text-color-text-muted">
-        <span>{colorModeLabel(mode)}</span>
+      <div className="mb-2 flex items-start justify-between gap-3 text-xs text-text-color-text-muted">
+        <div className="min-w-0 space-y-1">
+          <div>{colorModeLabel(mode)}</div>
+          <div className="truncate font-mono text-[11px] text-text-color-text-muted">
+            {primitiveName ?? "Primitive unknown"}
+          </div>
+        </div>
         <div className="flex items-center gap-2">
-          <span className="font-mono text-text-color-text">
+          <span className="whitespace-nowrap font-mono text-text-color-text">
             {hex}
             {alphaPercent !== null ? (
               <span className="ml-1 text-text-color-text-muted">{`(${alphaPercent}%)`}</span>
@@ -62,8 +68,18 @@ export function ColorsPage() {
               <h3 className="text-sm font-semibold">{token.tokenName}</h3>
             </div>
             <div className="grid gap-3 md:grid-cols-2">
-              <Swatch mode="light" hex={token.lightHex} alphaPercent={token.lightAlphaPercent} />
-              <Swatch mode="dark" hex={token.darkHex} alphaPercent={token.darkAlphaPercent} />
+              <Swatch
+                mode="light"
+                hex={token.lightHex}
+                alphaPercent={token.lightAlphaPercent}
+                primitiveName={token.lightPrimitiveName}
+              />
+              <Swatch
+                mode="dark"
+                hex={token.darkHex}
+                alphaPercent={token.darkAlphaPercent}
+                primitiveName={token.darkPrimitiveName}
+              />
             </div>
           </article>
         ))}

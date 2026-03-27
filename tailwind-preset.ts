@@ -2,7 +2,8 @@ export const designSystemColors = {
   // Background
   "background-color-bg": "rgb(var(--background-color-bg) / <alpha-value>)",
   "background-color-bg-primary": "rgb(var(--background-color-bg-primary) / <alpha-value>)",
-  "background-color-bg-primary-hover": "rgb(var(--background-color-bg-primary-hover) / 0.9)",
+  "background-color-bg-primary-hover":
+    "rgb(var(--background-color-bg-primary-hover) / var(--background-color-bg-primary-hover-alpha))",
   "background-color-bg-primary-active": "rgb(var(--background-color-bg-primary-active) / <alpha-value>)",
   "background-color-bg-secondary": "rgb(var(--background-color-bg-secondary) / <alpha-value>)",
   "background-color-bg-secondary-hover": "rgb(var(--background-color-bg-secondary-hover) / <alpha-value>)",
@@ -31,7 +32,7 @@ export const designSystemColors = {
     "rgb(var(--background-error-color-bg-error-muted) / <alpha-value>)",
 
   "background-magic-color-bg-magic-muted":
-    "rgb(var(--background-magic-color-bg-magic-muted) / <alpha-value>)",
+    "rgb(var(--background-magic-color-bg-magic-muted) / var(--background-magic-color-bg-magic-muted-alpha))",
 
   "background-warning-color-bg-warning-muted":
     "rgb(var(--background-warning-color-bg-warning-muted) / <alpha-value>)",

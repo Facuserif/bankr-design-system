@@ -1,6 +1,7 @@
 import mappingMarkdown from "../../docs/mapping.md?raw";
 import globalsCss from "../styles/globals.css?raw";
 import colorModeResolved from "./color-mode-resolved.json";
+import colorPrimitives from "./color-primitives.json";
 
 type Mode = "light" | "dark";
 
@@ -8,6 +9,14 @@ type MappingRow = {
   tokenName: string;
   cssVar: string;
   utility: string;
+};
+
+type PrimitiveColorNode = {
+  $type?: string;
+  $value?: {
+    hex?: string;
+  };
+  [key: string]: unknown;
 };
 
 export type TokenColorData = {
@@ -19,6 +28,8 @@ export type TokenColorData = {
   darkHex: string;
   lightAlphaPercent: number | null;
   darkAlphaPercent: number | null;
+  lightPrimitiveName: string | null;
+  darkPrimitiveName: string | null;
 };
 
 function parseVarBlock(css: string, selector: ":root" | ".dark"): Record<string, string> {
@@ -72,6 +83,7 @@ const mappingRows = parseMapping(mappingMarkdown);
 
 const mappingByCssVar = new Map<string, MappingRow>(mappingRows.map((row) => [row.cssVar, row]));
 const resolvedColorModeMap = colorModeResolved as Record<string, { lightHex: string; darkHex: string }>;
+const primitiveNamesByHex = buildPrimitiveNamesByHex(colorPrimitives as PrimitiveColorNode);
 
 export const tokenColors: TokenColorData[] = Object.keys(lightVars)
   .filter((cssVar) => darkVars[cssVar] && !cssVar.endsWith("-alpha"))
@@ -97,8 +109,49 @@ export const tokenColors: TokenColorData[] = Object.keys(lightVars)
       darkHex: normalizeHex(darkHex),
       lightAlphaPercent: alphaPercent(lightHex),
       darkAlphaPercent: alphaPercent(darkHex),
+      lightPrimitiveName: resolvePrimitiveName(lightHex),
+      darkPrimitiveName: resolvePrimitiveName(darkHex),
     }];
   });
+
+function buildPrimitiveNamesByHex(source: PrimitiveColorNode): Map<string, string | null> {
+  const byHex = new Map<string, string[]>();
+
+  const visit = (node: PrimitiveColorNode, path: string[] = []) => {
+    if (!node || typeof node !== "object") {
+      return;
+    }
+
+    if (node.$type === "color" && node.$value?.hex) {
+      const hex = normalizeHex(node.$value.hex);
+      const primitiveName = path.join("/");
+      byHex.set(hex, [...(byHex.get(hex) ?? []), primitiveName]);
+      return;
+    }
+
+    for (const [key, value] of Object.entries(node)) {
+      if (key.startsWith("$")) {
+        continue;
+      }
+
+      visit(value as PrimitiveColorNode, [...path, key]);
+    }
+  };
+
+  visit(source);
+
+  return new Map(
+    [...byHex.entries()].map(([hex, names]) => [hex, names.length === 1 ? names[0] : null]),
+  );
+}
+
+function resolvePrimitiveName(hex: string): string | null {
+  return primitiveNamesByHex.get(stripAlpha(normalizeHex(hex))) ?? null;
+}
+
+function stripAlpha(hex: string): string {
+  return /^#[0-9A-F]{8}$/i.test(hex) ? hex.slice(0, 7) : hex;
+}
 
 function deriveUtilityFromKey(key: string): string {
   if (key.startsWith("background")) {

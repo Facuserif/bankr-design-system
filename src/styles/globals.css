@@ -3,22 +3,22 @@ html {
 }
 :root {
   /* Background */
-  --background-color-bg: 247 247 247;
+  --background-color-bg: 255 255 255;
   --background-color-bg-primary: 24 24 27;
   --background-color-bg-primary-hover: 24 24 27;
-  --background-color-bg-primary-hover-alpha: 0.9;
+  --background-color-bg-primary-hover-alpha: 0.8999999761581421;
   --background-color-bg-primary-active: 39 39 42;
   --background-color-bg-secondary: 228 228 231;
   --background-color-bg-secondary-hover: 212 212 216;
   --background-color-bg-secondary-active: 212 212 216;
 
-  --background-default-color-bg: 247 247 247;
-  --background-default-color-bg-surface: 242 242 243;
-  --background-default-color-bg-subtle: 212 212 216;
+  --background-default-color-bg: 255 255 255;
+  --background-default-color-bg-surface: 247 247 247;
+  --background-default-color-bg-subtle: 228 228 231;
   --background-default-color-bg-subtle-alpha: 0.5;
-  --background-default-color-bg-elevated: 228 228 231;
-  --background-default-color-bg-strong: 212 212 216;
-  --background-default-color-bg-disabled: 212 212 216;
+  --background-default-color-bg-elevated: 242 242 243;
+  --background-default-color-bg-strong: 228 228 231;
+  --background-default-color-bg-disabled: 228 228 231;
 
   --background-magic-color-bg-magic: 139 92 246;
   --background-magic-color-bg-magic-hover: 109 40 217;
@@ -31,8 +31,9 @@ html {
   --background-error-color-bg-error-muted: 254 242 242;
 
   --background-magic-color-bg-magic-muted: 237 233 254;
+  --background-magic-color-bg-magic-muted-alpha: 1;
 
-  --background-warning-color-bg-warning-muted: 254 249 195;
+  --background-warning-color-bg-warning-muted: 254 252 232;
 
   /* Border */
   --border-color-border: 228 228 231;
@@ -49,7 +50,7 @@ html {
 
   /* Text */
   --text-color-text: 9 9 11;
-  --text-color-text-on-color: 255 255 255;
+  --text-color-text-on-color: 247 247 247;
   --text-color-text-disabled: 161 161 170;
   --text-color-text-muted: 113 113 122;
   --text-color-text-magic: 124 58 237;
@@ -61,7 +62,7 @@ html {
 
   /* Icon */
   --icon-color-icon: 24 24 27;
-  --icon-color-icon-on-color: 247 247 247;
+  --icon-color-icon-on-color: 228 228 231;
   --icon-color-icon-disabled: 161 161 170;
   --icon-color-icon-muted: 113 113 122;
 }
@@ -70,8 +71,8 @@ html {
   /* Background */
   --background-color-bg: 9 9 11;
   --background-color-bg-primary: 247 247 247;
-  --background-color-bg-primary-hover: 247 247 247;
-  --background-color-bg-primary-hover-alpha: 0.9;
+  --background-color-bg-primary-hover: 250 250 250;
+  --background-color-bg-primary-hover-alpha: 0.8999999761581421;
   --background-color-bg-primary-active: 242 242 243;
   --background-color-bg-secondary: 39 39 42;
   --background-color-bg-secondary-hover: 24 24 27;
@@ -93,9 +94,10 @@ html {
   --background-success-color-bg-success-strong: 74 222 128;
 
   --background-error-color-bg-error-strong: 239 68 68;
-  --background-error-color-bg-error-muted: 68 12 12;
+  --background-error-color-bg-error-muted: 69 10 10;
 
   --background-magic-color-bg-magic-muted: 46 16 101;
+  --background-magic-color-bg-magic-muted-alpha: 0.4000000059604645;
 
   --background-warning-color-bg-warning-muted: 66 32 6;
 
@@ -109,7 +111,7 @@ html {
   --border-color-border-input-hover: 109 40 217;
   --border-color-border-success: 34 197 94;
   --border-color-border-magic-muted: 109 40 217;
-  --border-color-border-error-muted: 185 28 28;
+  --border-color-border-error-muted: 220 38 38;
   --border-color-border-warning: 250 204 21;
 
   /* Text */
@@ -121,12 +123,12 @@ html {
   --text-color-text-magic-strong: 237 233 254;
   --text-color-text-success: 74 222 128;
   --text-color-text-error: 248 113 113;
-  --text-color-text-warning: 250 204 21;
+  --text-color-text-warning: 253 224 71;
   --text-color-text-placeholder: 113 113 122;
 
   /* Icon */
   --icon-color-icon: 247 247 247;
-  --icon-color-icon-on-color: 24 24 27;
+  --icon-color-icon-on-color: 39 39 42;
   --icon-color-icon-disabled: 82 82 91;
   --icon-color-icon-muted: 161 161 170;
 }
